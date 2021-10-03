@@ -5,24 +5,8 @@
 
 > An all in one asset manager to track different asset classes under a single platform using React
 
-## Install
-
-```sh
-npm install
-```
-
-## Usage
-
-```sh
-npm run start
-```
-
-## Run tests
-
-```sh
-npm run test
-```
-
+## Live Demo
+https://tsettc.github.io/All-in-one-Asset-Manager/
 ## Author
 
 👤 **Tse**
