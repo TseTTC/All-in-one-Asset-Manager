@@ -4,7 +4,14 @@
 </p>
 
 > An all in one asset manager to track different asset classes under a single platform using React
-
+> -Currently a work in progress (WIP)
+> --Only works with US Market
+----
+> To add :
+> Crypto, other markets
+> Dashboarding of portfolio
+> Saving of portfolio/Accounts for users
+> 
 ## Live Demo
 https://tsettc.github.io/All-in-one-Asset-Manager/
 ## Author
