@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+#submitButton{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* default styling. Nothing to do with freexing first row and column */
+main {display: flex;}
+main > * {border: 1px solid;}
+table {border-collapse: collapse; font-family: helvetica}
+td, th {border:  1px solid;
+      padding: 10px;
+      min-width: 200px;
+      background: white;
+      box-sizing: border-box;
+      text-align: left;
+}
+.table-container {
+  position: relative;
+  max-height:  300px;
+  width: 500px;
+  overflow: scroll;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+thead th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: hsl(20, 50%, 70%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+thead th:first-child {
+  left: 0;
+  z-index: 3;
 }
 
-.App-link {
-  color: #61dafb;
+tfoot {
+  position: -webkit-sticky;
+  bottom: 0;
+  z-index: 2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+tfoot td {
+  position: sticky;
+  bottom: 0;
+  z-index: 2;
+  background: hsl(20, 50%, 70%);
+}
+
+tfoot td:first-child {
+  z-index: 3;
+}
+
+tbody {
+  overflow: scroll;
+  height: 200px;
+}
+
+/* MAKE LEFT COLUMN FIXEZ */
+tr > :first-child {
+  position: -webkit-sticky;
+  position: sticky; 
+  background: hsl(180, 50%, 70%);
+  left: 0; 
 }
